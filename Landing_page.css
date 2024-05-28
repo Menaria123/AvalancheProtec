@@ -1,0 +1,57 @@
+    .Landing_page {
+        max-width: 800px;
+        margin: 50px;
+        text-align: left;
+    }
+
+    .header {
+        font-size: 2em;
+        margin-bottom: 20px;
+        color: #333;
+        /* Adjust text color */
+    }
+
+    .passage {
+        line-height: 1.5;
+        margin-bottom: 30px;
+        color: #666;
+        /* Adjust text color */
+    }
+
+    .image-container {
+        /* Styles for image container (margins, width, etc.) */
+        margin-bottom: 30px;
+        /* Adjust spacing between image and text */
+    }
+
+    .image {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 5px;
+       
+    }
+
+    .button {
+        display: flex;
+    }
+
+    .avalanche-zone-map,
+    .area-analysis {
+        background-color: #007bff;
+        color: white;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 30px;
+        font-size: 16px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        transition: all 0.2s ease-in-out;
+        margin: 10px;
+    }
+
+    .avalanche-zone-map:hover,
+    .area-analysis:hover {
+        background-color: #0069d9;
+    }
