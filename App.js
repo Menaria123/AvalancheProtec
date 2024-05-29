@@ -1,34 +1,20 @@
-// import './App.css';
-// // export default App;
-// function MyButton() {
-//   return (
-//     <button>
-//       I'm a button
-//     </button>
-//   );
-// }
-
-// export default function MyApp() {
-//   return (
-//     <div>
-//       <h1>Welcome to my app</h1>
-//       <MyButton />
-//     </div>
-//   );
-// }
-
-// App.js
-
 import React, { useState } from 'react';
 import './App.css';
 import Navbar from './navbar';
+import Landing_page from './Landing_page';
+import marqee from './marqee';
 
 // Main App component
 function App() {
-
-  return ( <div className='navbar'>
-    <Navbar />
-  </div>);
+  return (
+    <>
+      <div className='navbar'>
+        <Navbar />
+      </div>
+      <marqee />
+      <Landing_page />
+    </>
+  );
 }
 
 export default App;
