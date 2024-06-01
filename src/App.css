@@ -1,0 +1,325 @@
+/* navbar */
+.navbar {
+  margin: 20px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img img {
+  width: 170px; /* Example width */
+  height: auto;
+  margin:20%;
+}
+
+.Options{
+  display: flex;
+  justify-content:space-evenly; /* Space options evenly */
+  margin-left: 200px;
+}
+.o {
+  padding: 10px;
+  padding-left: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#db{
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-left: 30px;
+  margin-right: 5px;
+  background-color: #8489DD;
+}
+
+#w{
+  height: 10px;
+}
+
+.urgent-news-container {
+  display: flex;
+  align-items: center;
+}
+
+.urgent-news {
+  background-color: #FF0000; /* Red background */
+  color: white; /* White text color */
+  padding: 5px; 
+  width:  160px;
+  height: 30px; /* Adjust height */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect for the box */
+  border-radius: 10px;
+}
+
+.urgent-news h2 {
+  font-size: 16px; 
+  padding-bottom: 5px;
+}
+
+.marquee-container {
+  overflow: hidden; /* Hide overflow */
+  white-space: nowrap; /* No line breaks */
+  background-color: #CBF2FF;
+  width: 100%;
+  height: 40px;
+}
+.marquee {
+  display: inline-block;
+  animation: marquee 10s linear infinite reverse; /* Reverse the animation */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* landing page css */
+.Landing_page {
+  margin: 5%;
+}
+
+.header {
+  width: 542px;
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: black;
+  font-weight: 900;
+  text-align: left;
+  size: 45px;
+  margin-bottom: 20px; /* Space between header and content */
+}
+
+.content {
+  display: flex;
+  align-items: flex-start; /* Align items to the top */
+}
+
+.text {
+  flex: 1; /* Take up remaining space */
+  margin-right: 0px; /* Space between text and image */
+}
+
+.passage {
+  width: 673px;
+  font-family: serif;
+  font-size: 23px;
+  font-weight: 300;
+  line-height: 30.26px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  opacity: 1; /* Ensure opacity is 1 to make the text visible */
+}
+
+.button {
+  display: flex;
+  margin-top: 20px; /* Adjust spacing as needed */
+}
+
+.avalanche-zone-map,
+.area-analysis {
+  background-color: #83D2EF;
+  color: black;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  margin: 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.avalanche-zone-map:hover,
+.area-analysis:hover {
+  background-color: #0069d9;
+}
+
+.image {
+  flex-shrink: 0; 
+  margin-right: 5%;
+}
+
+.image img {
+  max-width: 1000px; /* Set maximum width for the image */
+  height: 400px;
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.2); /* Create shadow for the image */
+  border-radius: 40px;
+}
+
+/* map  */
+.cantainer-map{
+  width: 40px;
+  height: 400px;
+}
+/* Area */
+.container-area {
+  align-items: center;
+  margin-top: 10%;
+}
+
+.header-area {
+  text-align: center;
+  font-size: 20px;
+}
+
+.location {
+  text-align: center;
+  background-color: #CBF2FF;
+  width: 380px;
+  height: 80px;
+  top: 4488px;
+  margin-left: 37%;
+  margin-right: 35%;
+  gap: 0px;
+  opacity: 0px;
+
+}
+
+.location h3{
+  padding: 25px;
+  font-size: 20px;
+}
+
+.area{
+  background-color: #8489DD4D;
+  height: 445px;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding: 10px;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  border-radius: 5%;
+}
+
+/* ndrf */
+.container-ndrf-main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  /* Align items at the start */
+  
+}
+
+.image-ndrf {
+  margin-right: 20px;
+}
+
+.image-ndrf img {
+  max-width: 434px;
+  height: auto;
+  margin-top: 3%;
+  margin-right: 5%;
+}
+
+.header-ndrf {
+  text-align: center;
+  margin-right:46%;
+  font-weight: 900;
+  font-size: 25px;
+}
+
+.passage-ndrf {
+  max-width: 600px;
+  flex: 1;
+  background-color: #D9D9D9;
+  padding: 30px 30px;
+
+}
+
+.passage-ndrf p {
+  margin: 0;
+  padding: 5px 0;
+  font-size :23px;
+  gap: 0;
+  font-weight: 600;
+  
+}
+
+/* safe */
+.continer-safe{
+  margin:5%;
+  display: flexbox;
+}
+
+.header-safe{
+margin-left: 38%;
+}
+
+.passage-safe p{
+  margin-left: 43%;
+  font-weight: 700;
+}
+
+.guide-safe{
+  padding: 50px;
+  background-color: #CBF2FF;
+  font-size: 15px;
+  font-weight: 700;
+  margin-left: 25%;
+  margin-right: 25%;
+  gap: 0px;
+  border-radius: 33px;
+  opacity: 0px;
+  
+}
+
+.guide-safe span{
+  font-size: 15px;
+  font-weight: 700;
+  color:#6A02BC;
+}
+
+/* weather */
+/* Weather.css */
+
+.weather {
+  padding: 10px; /* Keep padding small */
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 250px; /* Set a smaller fixed width */
+  height: 10px; /* Centering and margin adjustments */
+}
+
+.weather-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.temperature {
+  display: flex;
+  align-items: center;
+  margin-top: 5px; /* Small margin */
+}
+
+#icon img {
+  width: 100px; /* Smaller size for the icon */
+  height: 100px; /* Smaller size for the icon */
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem; /* Keep font size readable but not too large */
+  margin-left: 5px; /* Small margin */
+}
+
+.temp-c {
+  text-align: center;
+}
+
