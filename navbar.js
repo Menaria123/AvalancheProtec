@@ -1,5 +1,5 @@
 import React from 'react';
-import './navbar.css'; // Import the CSS file for styling
+import './App.css'; // Import the CSS file for styling
 import Weather from './Weather.js';
 import logo from './_logo.jpg'
 
@@ -22,15 +22,15 @@ const Navbar = () => {
         </div>
       </nav>
       <div className="urgent-news-container">
-    <div className="urgent-news">
-      <h2>Urgent updates</h2>
-    </div>
-    <div className="marquee-container">
-      <div className="marquee">
-      High Avalanche Risk in Colorado's Rocky Mountains!Recent heavy snowfall increases danger in back country terrain.Experts 
+        <div className="urgent-news">
+          <h2>URGENT UPDATES</h2>
+        </div>
+        <div className="marquee-container">
+          <div className="marquee">
+            High Avalanche Risk in Colorado's Rocky Mountains!Recent heavy snowfall increases danger in back country terrain.Experts
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
     </div>
   );
 };

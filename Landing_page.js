@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import './Landing_page.css';
+import React from 'react';
+import './App.css';
 import server from './server.png'
 
 // Main App component
-function Landing_page() {
+function Landingpage() {
   return (
     <div className='Landing_page'>
       <div className='content'>
@@ -27,4 +27,4 @@ function Landing_page() {
   );
 }
 
-export default Landing_page;
+export default Landingpage;

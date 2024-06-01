@@ -1,18 +1,20 @@
-import React, { useState } from 'react';
-import './App.css';
+import React from 'react';
 import Navbar from './navbar';
-import Landing_page from './Landing_page';
-import marqee from './marqee';
-
+import Landingpage from './Landing_page'
+import NDRF from './ndrf';
+import Safe from './safty_guide';
+import Area from './Area-wise-analyisi';
+import Map from './map'
 // Main App component
 function App() {
   return (
     <>
-      <div className='navbar'>
-        <Navbar />
-      </div>
-      <marqee />
-      <Landing_page />
+      <Navbar />
+      <Landingpage />
+      <Map />
+      <Area />
+      <NDRF />
+      <Safe />
     </>
   );
 }

@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import './Weather.css'; // Import the CSS file for styling
-
-
+import './App.css'; // Import the CSS file for styling
 
 const Weather = () => {
   const [weather, setWeather] = useState(null);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchWeather = async () => {
@@ -24,6 +23,7 @@ const Weather = () => {
         setWeather(weatherData);
       } catch (error) {
         console.error('Error fetching weather:', error);
+        setError('Unable to retrieve weather data');
       }
     };
 
@@ -36,24 +36,28 @@ const Weather = () => {
     });
   };
 
+  if (error) {
+    return <div>{error}</div>;
+  }
+
   if (!weather) {
     return <div>Loading...</div>;
   }
 
-  // Function to convert Celsius to Fahrenheit
-  const celsiusToFahrenheit = (celsius) => {
-    return (celsius * 9/5) + 32;
-  };
+  const celsius = weather.main.temp.toFixed(1);
+  const fahrenheit = (celsius * 9/5 + 32).toFixed(1);
+  const iconCode = weather.weather[0].icon;
+  const iconUrl = `http://openweathermap.org/img/wn/${iconCode}@2x.png`;
+
   return (
     <div className="weather">
       <div className="weather-data">
         <div className="temperature">
+          <div id="icon"><img src={iconUrl} alt="Weather icon" /></div>
           <div className="box">
-            <span className="temp-c">{weather.main.temp.toFixed(1)}° C</span>
-            <span className="temp-f">{celsiusToFahrenheit(weather.main.temp).toFixed(1)}° F</span>
+            <span className="temp-c">{celsius}° C / {fahrenheit}° F</span>
           </div>
         </div>
-        <div className="description">{weather.weather[0].description}</div>
       </div>
     </div>
   );
