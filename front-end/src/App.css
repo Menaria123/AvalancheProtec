@@ -56,10 +56,6 @@
   transform: scale(1.1);
 }
 
-#w{
- 
-}
-
 .urgent-news-container {
   display: flex;
   align-items: center;
@@ -351,3 +347,97 @@ margin-left: 38%;
   text-align: center;
 }
 
+.info{
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  flex-flow: row wrap;
+  margin-bottom: 50%;
+}
+.info h5{
+  text-align: center;
+  font-size: 1.4em;
+}
+
+.B1, .B2{
+   background-color: #F1FCFF;
+   border-radius: 26px;
+   height: 350px;
+   width: 450px;
+   padding: 10px;
+}
+
+.B1 h5{
+  color: #00BAFE;
+}
+
+#line {
+  width: 410px;     
+  height: 3px;
+  margin: 22px;  
+  margin-bottom: 2px;    
+  background-color: black; 
+  margin: 0 auto;
+}
+
+.district{
+  padding-left: 50px;
+  font-size: larger;
+}
+
+.district h4{
+  margin-bottom: 30px;
+}
+.disname h4{
+  color: #FF0000;
+ margin: 30px ;
+ font-size: 1.2em;
+ margin-left: -20px;
+}
+
+.district p{
+  font-size: 100%;
+  font-weight: 700;
+}
+
+.disname p{
+  font-size: 100%;
+  font-weight: 700;
+  margin: 25px;
+}
+
+.info-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.loc{
+  padding-left: 50px;
+  font-size: larger;
+}
+
+#wl{
+  color: orangered;
+}
+
+#rl{
+   margin-bottom: -20px;
+}
+
+.head{
+  display:flex;
+  justify-content: space-between;
+  margin: 20px;
+  margin-bottom: 0px;
+  margin-top: 1px;
+}
+
+.loc p, .rlevel p{
+  font-size: 100%;
+  font-weight: 700;
+  margin: 30px;
+}
+.rlevel p{
+ transform: scale(2.1);
+ margin: 35px;
+}

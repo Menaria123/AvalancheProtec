@@ -5,6 +5,7 @@ import NDRF from './ndrf';
 import Safe from './safty_guide';
 import Area from './Area-wise-analyisi';
 import Map from './map'
+import InfoBox from './InfoBox';
 // Main App component
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Navbar />
       <Landingpage />
       <Map />
+      <InfoBox />
       <Area />
       <NDRF />
       <Safe />
