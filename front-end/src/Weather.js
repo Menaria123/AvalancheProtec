@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css'; // Import the CSS file for styling
-import Icon from './Icon'; // Import the Icon component
+import Icon from './icon'; // Import the Icon component
 
 const Weather = () => {
   const [weather, setWeather] = useState(null);

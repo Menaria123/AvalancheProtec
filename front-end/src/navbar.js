@@ -16,7 +16,7 @@ const Navbar = () => {
             <div className='o'> CONTACT US </div>
             <div className='o' id="db"> DASHBOARD </div>
             <div className='o'> HELP </div>
-            <div className='o' id="e"> EMERGENCY NO. </div>
+            <div className='o'> Emergency no. </div>
             <div className='o' id="w"> <Weather /></div>
           </div>
         </div>
@@ -27,7 +27,7 @@ const Navbar = () => {
         </div>
         <div className="marquee-container">
           <div className="marquee">
-          High Avalanche Risk in Colorado's Rocky Mountains! Recent heavy snowfall increases danger in backcountry terrain. Experts advise extreme caution for those venturing into these areas.
+            High Avalanche Risk in Colorado's Rocky Mountains!Recent heavy snowfall increases danger in back country terrain.Experts
           </div>
         </div>
       </div>

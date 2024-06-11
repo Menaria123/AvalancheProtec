@@ -2,6 +2,7 @@ import React from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
+import './App.css';
 
 // Fix the default icon issue in Leaflet with React
 delete L.Icon.Default.prototype._getIconUrl;
@@ -29,17 +30,19 @@ const MapComponent = () => {
   ];
 
   return (
-    <MapContainer center={position} zoom={5} style={{ height: "100vh", width: "100%" }}>
-      <TileLayer
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-      />
-      {avalanchePlaces.map((place, index) => (
-        <Marker key={index} position={place.coordinates}>
-          <Popup>{place.name}</Popup>
-        </Marker>
-      ))}
-    </MapContainer>
+    <div className='map_container'>
+      <MapContainer center={position} zoom={5} style={{ height: "100vh", width: "100%"}}>
+        <TileLayer
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        />
+        {avalanchePlaces.map((place, index) => (
+          <Marker key={index} position={place.coordinates}>
+            <Popup>{place.name}</Popup>
+          </Marker>
+        ))}
+      </MapContainer>
+      </div>
   );
 };
 

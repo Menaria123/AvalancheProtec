@@ -1,16 +1,23 @@
-// src/App.js
 import React from 'react';
-import './App.css';
-import  MapComponent from './map';
-
+import Navbar from './navbar';
+import Landingpage from './Landing_page'
+import NDRF from './ndrf';
+import Safe from './safty_guide';
+import Area from './Area-wise-analyisi';
+import Map from './map'
+import InfoBox from './infobox';
+// Main App component
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Leaflet Map in React</h1>
-      </header>
-      <MapComponent />
-    </div>
+    <>
+      <Navbar />
+      <Landingpage />
+      <InfoBox />
+      <Map />
+      <Area />
+      <NDRF />
+      <Safe />
+    </>
   );
 }
 

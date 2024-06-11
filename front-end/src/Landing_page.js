@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import server from './server.png'
+import server from './server.png';
+// import mybutton from './Area-wise-analyisi'
 
 // Main App component
 function Landingpage() {
