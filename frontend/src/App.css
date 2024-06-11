@@ -1,0 +1,9 @@
+/* App.css */
+
+.navbar{
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  margin: 2px;
+}
+

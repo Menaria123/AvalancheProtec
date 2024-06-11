@@ -1,0 +1,40 @@
+/* navbar.css */
+
+.navbar {
+  margin: 20px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img img {
+  width: 120px; /* Example width */
+  height: auto;
+}
+
+.Options{
+  display: flex;
+  justify-content:space-evenly; /* Space options evenly */
+  margin-left: 200px;
+}
+.o {
+  padding: 10px;
+  padding-left: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#db{
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-left: 30px;
+  margin-right: 5px;
+  background-color: #8489DD;
+}
+
+#w{
+  height: 10px;
+}
