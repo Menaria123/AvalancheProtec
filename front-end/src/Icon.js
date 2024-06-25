@@ -14,4 +14,3 @@ const Icon = ({ temperature }) => {
   return <div className="icon">{icon}</div>;
 };
 export default Icon;
-
