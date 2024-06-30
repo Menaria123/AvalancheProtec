@@ -7,7 +7,7 @@ import Area from './Area-wise-analysis'; // Corrected filename
 import Map from './map'; // Corrected filename
 import InfoBox from './infobox';
 import Dash from './dashboard'; // Corrected component name
-
+ import Footer from '/.footer';
 // Main App component
 function App() {
   return (
@@ -20,6 +20,7 @@ function App() {
       <Area />
       <NDRF />
       <Safe /> {/* Corrected filename */}
+      <Footer />
     </>
   );
 }

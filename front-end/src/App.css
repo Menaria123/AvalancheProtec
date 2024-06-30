@@ -601,3 +601,69 @@ hr {
   margin: 10px;
   margin-bottom: 5px;
 }
+
+/* footer  */
+.footer {
+  background-color: black;
+  padding: 20px;
+  padding-left: 50px;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: large;
+}
+
+.yo {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+}
+
+.l {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.yo pre {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.about button {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 600;
+  background-color: #dadada; /* Grey background color */
+  color: black; /* Text color */
+  border: none; /* Remove default button border */
+  padding: 10px 30px; /* Padding inside the button */
+  border-radius: 40px; /* Rounded corners */
+  cursor: pointer; /* Cursor style */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.about button:hover {
+  background-color: #AAAAAA; /* Darker grey on hover */
+}
+img{
+  height: 43px;
+  width: 45px;
+}
+
+#i{
+  margin-top: 6px;
+  height: 30px;
+  width: 30px;
+  border-radius: 10px;
+}
+.cc{
+  position: fixed;
+  top: 24%;
+  color: white;
+  left: 40%;
+}
