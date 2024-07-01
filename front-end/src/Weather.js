@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css'; // Import the CSS file for styling
+import Icon from './icon'; // Import the Icon component
 
 const Weather = () => {
   const [weather, setWeather] = useState(null);
@@ -46,14 +47,14 @@ const Weather = () => {
 
   const celsius = weather.main.temp.toFixed(1);
   const fahrenheit = (celsius * 9/5 + 32).toFixed(1);
-  const iconCode = weather.weather[0].icon;
-  const iconUrl = `http://openweathermap.org/img/wn/${iconCode}@2x.png`;
 
   return (
     <div className="weather">
       <div className="weather-data">
         <div className="temperature">
-          <div id="icon"><img src={iconUrl} alt="Weather icon" /></div>
+          <div id="icon">
+            <Icon temperature={celsius} />
+          </div>
           <div className="box">
             <span className="temp-c">{celsius}° C / {fahrenheit}° F</span>
           </div>
