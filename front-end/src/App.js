@@ -8,6 +8,7 @@ import Map from './map';
 import InfoBox from './infobox';
 import Dashboard from './dashboard'; // Corrected component name
 import Footer from './footer'; // Corrected import path
+import Sdrf from './sdrf';
 
 import WarningModal from './modal'; // Corrected import and filename
 
@@ -28,6 +29,7 @@ function App() {
       <Dashboard />
       <AreaWiseAnalysis />
       <NDRF />
+      <Sdrf />
       <SafetyGuide />
       <Footer />
     </>
