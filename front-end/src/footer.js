@@ -1,8 +1,10 @@
 /* eslint-disable no-useless-escape */
 import React from 'react';
 import './App.css'; 
-import linkedin from 'C:\Users\wasfa\OneDrive\Documents\GitHub\AvalancheProtec\front-end\src\linkedin.png';
-import fb from 'C:\Users\wasfa\OneDrive\Documents\GitHub\AvalancheProtec\front-end\src\facebook.png';
+import fb from './fb.png';
+import linkedin from './linkedin.png';
+import insta from './insta.png';
+import yt from './yt.png';
 
 const Foot = () => {
     return (
@@ -15,20 +17,27 @@ const Foot = () => {
             </div>
             <div className="yo">
                 ADDRESS
-                <pre>42, Rajpur Road
-Ganges Nagar
-Delhi, India</pre>
+                <pre>42, Rajpur Road <br />
+                    Ganges Nagar <br />
+                    Delhi, India</pre>
             </div>
             <div className="yo">
-                CONNECT WITH US
+                <pre>                      CONNECT WITH US</pre>
                 <div className="l">
-                    <img className='logo' src={linkedin} alt="LinkedIn Logo" />
-                    <img className='logo' src={fb} alt="Facebook Logo" />
-                    <img className='logo' src='#' alt="insta" />
-                    <img className='logo' src='#' alt="yt" />
-
+                    <img className='logo-f1' src={linkedin} alt="LinkedIn Logo" />
+                    <img className='logo-f2' src={fb} alt="Facebook Logo" />
+                    <img className='logo-f3' src={insta} alt="Instagram Logo" />
+                    <img className='logo-f4' src={yt} alt="YouTube Logo" />
                 </div>
             </div>
+            <div className='yo'>
+            <pre>To Learn more <br /> about us <br />
+            click here </pre>
+             <div className='about'>
+             <button>ABOUT US</button>
+             </div>
+            </div>
+            <div className='cc'>© 2024 AvaGuardians. All rights reserved. </div>
         </div>
     );
 };

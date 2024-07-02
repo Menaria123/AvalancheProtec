@@ -1,25 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react'; // Corrected to import useState
 import Navbar from './navbar';
-import Landingpage from './Landing_page'; // Corrected filename
+import LandingPage from './Landing_page'; // Corrected component name
 import NDRF from './ndrf';
-import Safe from './safty_guide'; // Corrected filename
-import Area from './Area-wise-analysis'; // Corrected filename
-import Map from './map'; // Corrected filename
+import SafetyGuide from './safty_guide'; // Corrected component name
+import AreaWiseAnalysis from './Area-wise-analysis'; // Corrected component name
+import Map from './map';
 import InfoBox from './infobox';
-import Dash from './dashboard'; // Corrected component name
- import Footer from '/.footer';
-// Main App component
+import Dashboard from './dashboard'; // Corrected component name
+import Footer from './footer'; // Corrected import path
+
+import WarningModal from './modal'; // Corrected import and filename
+
 function App() {
+  const [showModal, setShowModal] = useState(true);
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
+
   return (
     <>
+      {showModal && <WarningModal onClose={handleCloseModal} />}
       <Navbar />
-      <Landingpage />
+      <LandingPage />
       <InfoBox />
       <Map />
-      <Dash /> {/* Corrected component name */}
-      <Area />
+      <Dashboard />
+      <AreaWiseAnalysis />
       <NDRF />
-      <Safe /> {/* Corrected filename */}
+      <SafetyGuide />
       <Footer />
     </>
   );
